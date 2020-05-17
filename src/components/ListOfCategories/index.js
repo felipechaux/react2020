@@ -9,7 +9,7 @@ import { List, Item } from './styles'
 import { categories as mockCategories } from '../../../api/db.json'
 
 export const ListOfCategories = () => {
-  const [categories, setCategories] = useState(mockCategories)
+  const [categories] = useState(mockCategories)
 
   return (
     <List>
