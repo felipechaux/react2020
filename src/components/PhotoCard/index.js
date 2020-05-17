@@ -2,7 +2,7 @@ import React from 'react'
 
 import { ImgWrapper, Img, Button } from './styles'
 
-import { MdFavoriteBorder } from "react-icons/md";
+import { MdFavoriteBorder } from 'react-icons/md'
 
 const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1518001589401-1743b61d1def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
 
