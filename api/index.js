@@ -44,7 +44,7 @@ const errorHandler = (err, req, res, next) => {
 app.use(errorHandler)
 server.applyMiddleware({ app, path: '/graphql' })
 
-app.get('/categories', function (req, res) {
+app.get('/categories', function (req, res) { // aca colocas la url que quieras
   res.send(categories)
 })
 

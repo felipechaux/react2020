@@ -16,7 +16,7 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
       </a>
 
       <Button>
-        <MdFavoriteBorder size='32px' />{likes} Likes!
+        <MdFavoriteBorder size='32px' />{likes} Likess!
       </Button>
     </article>
   )
