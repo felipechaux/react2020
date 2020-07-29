@@ -2,6 +2,12 @@ import styled from 'styled-components'
 
 import { fadeIn } from '../../styles/animation'
 
+export const Article = styled.article`
+/*empujar contenido - problema*/
+min-height:200px;
+`
+
+
 export const ImgWrapper = styled.div`
  border-radius:10px;
  display:block;
@@ -12,6 +18,7 @@ export const ImgWrapper = styled.div`
  position:relative;
  width:100%;
 `
+
 
 export const Img = styled.img`
  ${fadeIn()};
