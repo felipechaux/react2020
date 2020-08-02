@@ -2,14 +2,16 @@ import React from 'react'
 
 import { PhotoCard } from '../PhotoCard'
 
-import { photos } from '../../../api/db.json'
+//import { photos } from '../../../api/db.json'
+//hoc 
 
-export const ListOfPhotoCard = () => {
+ export const ListOfPhotoCardComponent = ({data:{photos=[]}}={}) => {
   return (
     <ul>
       {
-        photos.map(photo => <li key={photo.id}> <PhotoCard {...photo} />  </li>)
+        photos.map(photo => <PhotoCard key={photo.id} {...photo} />)
       }
     </ul>
   )
+
 }

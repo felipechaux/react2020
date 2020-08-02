@@ -19,7 +19,7 @@ function userCategoriesData(){
   useEffect(function(){
     setLoading(true)
     NProgress.start()
-    window.fetch('https://petgram-server-24iykciv5.now.sh/categories')
+    window.fetch('https://petgram-backend-one.now.sh/categories')
     .then(res => res.json())
     .then(response => {
       setCategories(response)
