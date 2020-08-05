@@ -66,7 +66,7 @@ export const ListOfCategories = () => {
     {
        /* en caso de loading true, renderizar categorias por defecto, si no  carga normal */
       loading ? <Item key='loading'><Category /></Item>
-      : categories.map(category => <Item key={category.id}> <Category {...category} /> </Item>)
+      : categories.map(category => <Item key={category.id}> <Category {...category} path={`/pet/${category.id}`} /> </Item>)
     }
   </List>
 
