@@ -1,6 +1,8 @@
 import styled from 'styled-components'
+//link para evitar recargar pagina
+import {Link as LinkRouter} from '@reach/router'
 
-export const Anchor = styled.a`
+export const Link = styled(LinkRouter)`
  display:flex;
  flex-direction: column;
  text-align:center;

@@ -3,12 +3,12 @@ import { ListOfCategories } from '../components/ListOfCategories'
 import { ListOfPhotoCard } from '../container/ListOfPhotoCard'
 
 
-export const Home  = ({id}) =>{
+export const Home  = ({categoryId}) =>{
 
    return (
     <Fragment>
     <ListOfCategories />
-   <ListOfPhotoCard categoryId={id} />
+   <ListOfPhotoCard categoryId={categoryId} />
    </Fragment>
    )
 }
