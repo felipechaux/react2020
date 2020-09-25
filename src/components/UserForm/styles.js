@@ -11,6 +11,10 @@ margin-bottom:8px;
 padding:8px 4px;
 display:block;
 width:100%;
+/*feedbacl visual cuando el campo esta inactivo*/
+&[disabled]{
+opacity:.3;
+}
 `
 export const Button = styled.button`
 background:#8d00ff;
@@ -20,10 +24,18 @@ display:block;
 width:100%;
 height:40px;
 text-align:center;
+&[disabled]{
+opacity:.3;
+}
 `
 
 export const Title = styled.h2`
 font-size:16px;
 font-weight:500;
 padding: 8px 0;
+`
+
+export const Error = styled.span`
+font-size:14px;
+color:red;
 `

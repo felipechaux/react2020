@@ -35,7 +35,7 @@ function userCategoriesData(){
 
 //import { categories as mockCategories } from '../../../api/db.json'
 
-export const ListOfCategories = () => {
+ const ListOfCategoriesComponent = () => {
 
   const {categories,loading} = userCategoriesData()
   //estado para saber si estan fijas las categortias - componente  visual
@@ -80,5 +80,9 @@ export const ListOfCategories = () => {
     </Fragment>
   )
 }
+
+//uso de memo para evitar renderizar de forma innecesaria
+//no se vuelve a renderizar si las props son diferentes
+export const ListOfCategories = React.memo(ListOfCategoriesComponent)
 
 // use all props with {...category} or cover={category.cover} emoji={category.emoji}
